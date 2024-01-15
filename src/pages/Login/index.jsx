@@ -22,7 +22,7 @@ const Login = () => {
             <div className='flex w-full bg-[#B590E0] p-[5px] rounded-md h-[50%] mb-4'
               onClick={handlePlayVideo}
             >
-              <div className='relative rounded overflow-hidden flex w-full h-full '>
+              <div className='relative rounded overflow-hidden flex w-full h-full bg-black '>
                 <div className={`${play ? 'hidden' : 'block'} absolute w-full h-full bg-[#191D1C] top-0 left-0 bg-opacity-60`}>
                   <div 
                   className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10'
@@ -41,7 +41,7 @@ const Login = () => {
                 </div>
                 <video 
                 src="https://firebasestorage.googleapis.com/v0/b/social-media-2-e01b4.appspot.com/o/170529730537210000000_374519764938888_6505366222450498219_n.mp4?alt=media&token=04bfcccc-aa7d-4f22-841c-6e012314965f"
-                className='mx-auto bg-black'
+                className='mx-auto '
                 ref = {playVideo}
                 >
 
