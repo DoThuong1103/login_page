@@ -14,7 +14,7 @@ const Login = () => {
   }
   return (
     <div className='flex justify-center items-center w-screen h-screen bg-[#B88DF0]'>
-      <div className=' w-4/5 md:w-3/4 lg:w-1/2 h-3/5 flex bg-[#FEFDFE] rounded-3xl p-2'>
+      <div className=' w-4/5 sm:w-3/4 lg:w-[800px] h-3/5 flex bg-[#FEFDFE] rounded-3xl p-2'>
         <div className='hidden md:flex justify-center items-center bg-[#8100CC] w-3/5 rounded-l-2xl  h-full'>
           <div className='flex flex-col py-20 h-full justify-center w-4/5'>
             <h1 className='text-white font-bold text-3xl pb-4'>Welcome to <br/> The Patent Website</h1>
@@ -57,9 +57,9 @@ const Login = () => {
         </div>
 
         {/* Form */}
-        <div className='bg-[#EADCFF] rounded-r-2xl flex-1 flex items-center p-4 md:p-8 lg:p-10 relative'>
+        <div className='bg-[#EADCFF] rounded-2xl md:rounded-l-none rounded-r-2xl flex-1 flex items-center p-4 md:p-8 lg:p-10 relative'>
           <div className='absolute top-10 right-10 border-2 border-[#8C37C5] text-[#8C37C5] font-bold px-[10px] py-1 rounded ml-auto hover:opacity-80 transition-all cursor-pointer'>REGISTER</div>
-          <form action="" className='w-full'>
+          <form action="" className='px-5 md:px-0 w-full'>
             <p className='font-bold text-2xl pb-6'>Login</p>
             <div class="w-full relative pb-4">
               <label for="input" className="block tracking-wide text-[#8A8196] text-xs font-bold absolute left-2 -top-2 bg-[#EADCFF]">
@@ -85,7 +85,7 @@ const Login = () => {
               />
             </div>
             <a href='/' className='text-[#8E4BC1] font-bold float-right pb-16'>Forgot Password?</a>
-              <button type='submit' className='uppercase w-full bg-[#6B00B0] text-white rounded py-2 hover:bg-opacity-90 transition-all '>
+              <button type='submit' className='uppercase w-full bg-[#6B00B0] text-white rounded py-2 hover:bg-opacity-90 transition-all font-semibold'>
               Sign in
             </button>
           </form>
